@@ -1,0 +1,23 @@
+find x in {a(i)}
+
+left <- 1
+right <- n
+
+while (left<right)
+    one_third <- floor((left+right)/3)
+    two_third <- 2 * floor((left+right)/3)
+
+    if (x < one_third) then
+        right <- one_third
+    elif (x > two_third) then
+        left <- two_third
+    else
+        left <- one_third
+        right <- two_third
+
+if (a(i) = x) then
+    output i
+else
+    output 0
+
+    
